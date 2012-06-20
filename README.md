@@ -6,7 +6,7 @@ enjoy your emacs life.
 ## How to Use
 
     git clone git://github.com/glidenote/paperboy.el.git
-    sh paperboy.vim/init.sh
+    sh paperboy.el/init.sh
     emacs
 
 ## Contributing
