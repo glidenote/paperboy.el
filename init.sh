@@ -3,8 +3,6 @@
 RCFILES="
 .bashrc
 .zshrc
-.tcshrc
-.cshrc
 "
 
 echo "powerup your emacs."
