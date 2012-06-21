@@ -25,3 +25,10 @@ do
 done
 
 echo "enjoy your emacs life!"
+
+# Local Variables:
+# mode: sh
+# sh-basic-offset: 4
+# tab-width: 4
+# coding: utf-8
+# End:
