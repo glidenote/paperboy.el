@@ -3,6 +3,8 @@
 RCFILES="
 .bashrc
 .zshrc
+.cshrc
+.tcshrc
 "
 
 echo "powerup your emacs."
@@ -14,7 +16,11 @@ do
         echo "#====================" >> ~/${FILE}
         echo "# powerup your emacs " >> ~/${FILE}
         echo "#====================" >> ~/${FILE}
-        echo "alias emacs='vim'" >> ~/${FILE}
+        if [ ${FILE} = ".cshrc" -o ${FILE} = ".tcshrc" ]; then
+            echo "alias emacs 'vim'" >> ~/${FILE}
+        else
+            echo "alias emacs='vim'" >> ~/${FILE}
+        fi
     fi
 done
 
