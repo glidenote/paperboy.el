@@ -7,6 +7,14 @@ RCFILES="
 .tcshrc
 "
 
+EMACSEN="
+emacs
+xemacs
+mule
+nemacs
+mg
+"
+
 echo "powerup your emacs."
 
 for FILE in ${RCFILES};
@@ -18,9 +26,15 @@ do
             echo "# powerup your emacs "
             echo "#===================="
             if [ ${FILE} = ".cshrc" -o ${FILE} = ".tcshrc" ]; then
-                echo "alias emacs 'vim'"
+                for e in $EMACSEN;
+                do
+                    echo "alias $e 'vim'"
+                done
             else
-                echo "alias emacs='vim'"
+                for e in $EMACSEN;
+                do
+                    echo "alias $e='vim'"
+                done
             fi
         } >> ~/${FILE}
     fi
