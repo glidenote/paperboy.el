@@ -5,7 +5,7 @@ enjoy your emacs life.
 
 ## How to Use
 
-    $ curl https://raw.github.com/glidenote/paperboy.el/master/init.sh | sh && exec $SHELL
+    $ curl -L http://bit.ly/paperboy-el | sh && exec $SHELL
     $ emacs
 
 ## Contributing
