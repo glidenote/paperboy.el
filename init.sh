@@ -21,4 +21,3 @@ do
 done
 
 echo "enjoy your emacs life!"
-exec $SHELL
