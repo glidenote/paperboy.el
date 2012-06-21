@@ -1,13 +1,12 @@
 # paperboy.el
 
-powerup your emacs. more powerful.  
+powerup your emacs. more powerful.
 enjoy your emacs life.
 
 ## How to Use
 
-    git clone git://github.com/glidenote/paperboy.el.git
-    sh paperboy.el/init.sh
-    emacs
+    $ curl https://raw.github.com/glidenote/paperboy.el/master/init.sh | sh
+    $ emacs
 
 ## Contributing
 
