@@ -12,15 +12,17 @@ echo "powerup your emacs."
 for FILE in ${RCFILES};
 do
     if [ -e ~/${FILE} ]; then
-        echo "" >> ~/${FILE}
-        echo "#====================" >> ~/${FILE}
-        echo "# powerup your emacs " >> ~/${FILE}
-        echo "#====================" >> ~/${FILE}
-        if [ ${FILE} = ".cshrc" -o ${FILE} = ".tcshrc" ]; then
-            echo "alias emacs 'vim'" >> ~/${FILE}
-        else
-            echo "alias emacs='vim'" >> ~/${FILE}
-        fi
+        {
+            echo ""
+            echo "#===================="
+            echo "# powerup your emacs "
+            echo "#===================="
+            if [ ${FILE} = ".cshrc" -o ${FILE} = ".tcshrc" ]; then
+                echo "alias emacs 'vim'"
+            else
+                echo "alias emacs='vim'"
+            fi
+        } >> ~/${FILE}
     fi
 done
 
