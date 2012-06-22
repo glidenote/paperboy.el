@@ -8,6 +8,14 @@ enjoy your emacs life.
     $ curl -L http://bit.ly/paperboy-el | sh && exec $SHELL
     $ emacs
 
+## Why paperboy.el?
+
+[Paperboy&co.](http://paperboy.co.jp) has many Vimmer and many Emacser.
+
+I used to use vim, but you know, Emacs is nothing but awesome! I was definitely wrong...
+
+So all of Vimmer coverted to emacs with paperboy.el ;)
+
 ## Contributing
 
  1. Fork it
