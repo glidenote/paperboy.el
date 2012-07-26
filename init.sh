@@ -60,6 +60,8 @@ do
     fi
 done
 
+echo "exclude=emacs" | sudo tee -a /etc/yum.conf > /dev/null
+
 echo "enjoy your emacs life!"
 
 # Local Variables:
