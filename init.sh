@@ -60,7 +60,9 @@ do
     fi
 done
 
-echo "exclude=emacs" | sudo tee -a /etc/yum.conf > /dev/null
+if [ -f /etc/yum.conf ];then
+    echo "exclude=emacs" | sudo tee -a /etc/yum.conf > /dev/null
+fi
 
 echo "enjoy your emacs life!"
 
