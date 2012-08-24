@@ -64,6 +64,10 @@ if [ -f /etc/yum.conf ];then
     echo "exclude=emacs" | sudo tee -a /etc/yum.conf > /dev/null
 fi
 
+if [ -d /etc/apt/preferences.d ];then
+    echo "Package: emacs\nPin: release v=*\nPin-Priority: -1\n" | sudo tee -a /etc/apt/preferences.d/powerful-editor.pref > /dev/null
+fi
+
 echo "enjoy your emacs life!"
 
 # Local Variables:
